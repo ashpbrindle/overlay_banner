@@ -5,15 +5,17 @@ OverlayNotifier notifier = OverlayNotifier();
 ```
 
 ```dart
-BannerWrapper(
-      overlayNotifier: notifier,
-      child: Scaffold(
-        appBar: AppBar(
-          title: Text("My App"),
+MaterialApp(
+      BannerWrapper(
+            overlayNotifier: notifier,
+            child: Scaffold(
+              appBar: AppBar(
+                title: Text("My App"),
+              ),
+              body: Center(),
+           ),
         ),
-        body: Center(),
-      ),
-    );
+     );
 ```
 
 ```dart
