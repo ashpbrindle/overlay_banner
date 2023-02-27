@@ -1,35 +1,11 @@
 import 'package:flutter/material.dart';
 
 class OverlayBanner extends StatelessWidget {
-  const OverlayBanner.warning({
-    Key? key,
-    this.leading,
-    required this.body,
-    this.trailing,
-    this.backgroundColour = Colors.red,
-  }) : super(key: key);
-
-  const OverlayBanner.success({
-    Key? key,
-    this.leading,
-    required this.body,
-    this.trailing,
-    this.backgroundColour = Colors.green,
-  }) : super(key: key);
-
-  const OverlayBanner.update({
-    Key? key,
-    this.leading,
-    required this.body,
-    this.trailing,
-    this.backgroundColour = Colors.orange,
-  }) : super(key: key);
-
   const OverlayBanner({
     Key? key,
+    required this.body,
     this.backgroundColour,
     this.leading,
-    required this.body,
     this.trailing,
   }) : super(key: key);
 
