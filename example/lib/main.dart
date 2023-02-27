@@ -50,18 +50,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () {
                   GetIt.I
                       .get<OverlayNotifier>()
-                      .showBanner(DismissibleBanner());
+                      .showBanner(banner: DismissibleBanner());
                 },
                 child: const Text("Trigger Dismissible Banner"),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  GetIt.I.get<OverlayNotifier>().showBanner(
-                        AutoDismissBanner(),
-                        autoDismiss: true,
-                      );
-                },
-                child: const Text("Trigger Auto Dismiss Banner"),
               ),
             ],
           ),
